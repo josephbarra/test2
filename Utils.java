@@ -7,6 +7,24 @@ import java.net.InetAddress;
 import java.net.SocketException;
 
 public class Utils {
+	
+	public float getCameraAngle()
+	{
+		    float  angleToTurn = 500f;
+			try {
+				System.out.println("*******Trying to turn angle");
+				angleToTurn = Float.parseFloat(readSocket("10.0.20.9", 9999, "009"));
+				System.out.println("*******Turned angle  ********** = " + angleToTurn );
+			} catch (NumberFormatException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		   return angleToTurn;
+	}	
+	
+	
+	
 	public String readSocket(String ipAddress, int Port, String sentence ) throws IOException
 	{
 				int timeOut =1500;

@@ -6,6 +6,7 @@ public class States {
 	public static final int TURN_ANGLE = 43;
 	public static final int MOVE = 44;
 	public static final int DONE = 45;
-	public static final int nothing = 0;	
+	public static final int nothing = 0;
+	public static final int  GO_DISTANCE = 46;
 
 }

@@ -18,7 +18,7 @@ public class SpeedControllers {
     	
     }
 	
-   public void setTalons()
+   public void setDriveTalons()
    {
 	   // drive train start
 		rightSlave.changeControlMode(CANTalon.TalonControlMode.Follower);
